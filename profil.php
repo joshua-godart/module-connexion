@@ -24,7 +24,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
             <?php
             if(isset($_SESSION['id']) && $userinfos['id'] == $_SESSION['id']){
             ?>
-            <a href="#">Editer mon profil</a>
+            <a href="edit_profil.php">Editer mon profil</a>
             <a href="deconnexion.php">Déconnexion</a>
             <?php
             }

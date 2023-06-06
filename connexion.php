@@ -11,10 +11,15 @@ if(isset($_POST['form_connexion'])){
         $requser->execute(array($login_connect, $password_connect));
         $userexist = $requser->rowCount();
         if($userexist == 1){
+            if($login_connect === 'admin' && $password_connect === sha1('admin')){
+                header("Location: admin.php");
+                exit();
+            }else{
             $userinfos = $requser->fetch();
             $_SESSION['id'] = $userinfos['id'];
             $_SESSION['login'] = $userinfos['login'];
             header("Location:profil.php?id=".$_SESSION['id']);
+            }
         }else{
             $message = "Mauvais Login ou Mot de passe";
         }

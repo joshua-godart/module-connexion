@@ -1,0 +1,62 @@
+body{
+    /* background-image: url(img/diablo.jpg); */
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    overflow: hidden;
+}
+div.formulaire{
+    margin: 20vh;
+    background-color: #1817179c;
+    /* background-color: rgba(79, 29, 2, 0.579); */
+    /* background-color: rgba(255,255,255,0.2); */
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 40vh;
+    border-radius: 10px;
+    /* opacity: 0.2; */
+}
+.video-arriere-plan {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/* input{
+    background-color: rgb(79, 29, 2, 0.579);
+} */
+.formulaire{
+    position: relative;
+    z-index: 1;
+}
+.deja{
+    display: flex;
+    text-align: center;
+    padding: 15px;
+}
+.deja div{
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    border: 0.5px solid #fff;
+    padding: 5px;
+}
+.deja:hover a{
+    background-color: rgb(154, 4, 4);
+    transition: 0.3s;
+}
