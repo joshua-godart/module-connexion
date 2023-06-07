@@ -44,7 +44,7 @@ if(isset($_POST['form_inscription'])){
 <body>
     <section class="container">
         <video class="video-arriere-plan" autoplay muted loop>
-            <source src="diablo.mp4" type="video/mp4">
+            <source src="img/diablo.mp4" type="video/mp4">
         </video>
         <div class="formulaire" id="content">
             <div>

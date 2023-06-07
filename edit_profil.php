@@ -54,7 +54,7 @@ if(isset($_SESSION['id'])){
 </head>
 <body>
     <div>
-        <h2>Edition de mon profil</h2>
+        <h2>Edition du profil</h2>
         <form action="" method="post">
         <table>
             <tr>

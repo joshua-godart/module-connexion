@@ -4,6 +4,7 @@ $nomUtilisateur = 'root';
 $motDePasse = 'admin';
 $nomBaseDeDonnees = 'moduleconnexion';
 
+
 try {
     // Connexion à la base de données avec PDO
     $bdd = new PDO("mysql:host=$serveur;dbname=$nomBaseDeDonnees;charset=utf8", $nomUtilisateur, $motDePasse);
@@ -24,7 +25,7 @@ try {
     echo "</tr>";
     echo "</thead>";
     echo "<tbody>";
-    
+
     while ($ligne = $resultat->fetch(PDO::FETCH_ASSOC)) {
         echo "<tr>";
         echo "<td>" . $ligne['id'] . "</td>";
@@ -45,4 +46,15 @@ try {
     echo "Erreur : " . $e->getMessage();
 }
 ?>
-<a href="deconnexion.php">Déconnexion</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <a href="deconnexion.php">Déconnexion</a>
+</body>
+</html>
