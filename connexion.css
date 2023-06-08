@@ -68,14 +68,15 @@ h2{
     padding-right: 10px;
 }
 a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #ffffffb1;
-    border: 0.5px solid #ffffffb1;
+    /* border: 0.5px solid #ffffffb1; */
     padding: 5px;
     font-size: 15px;
 }
 .deja div:hover a{
-    background-color: rgb(154, 4, 4);
+    /* background-color: rgb(154, 4, 4); */
+    color: rgb(154, 4, 4);
     transition: 0.3s;
 }
 input[type=submit]{
